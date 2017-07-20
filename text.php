@@ -1,14 +1,5 @@
-<?php 
+echo 'nihao';
 
-
-function recursive($num) {
-    echo $num;
-    
-    if($num < 0) {
-        return;
-    }
-    recursive($num-1);
-    echo $num;
+function text() {
+	text();
 }
-
-recursive(10);
