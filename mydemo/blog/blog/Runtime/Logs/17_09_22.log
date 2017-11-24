@@ -1,0 +1,297 @@
+[ 2017-09-22T18:59:15+08:00 ] 0.0.0.0 /blog/
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.006245s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.017252s ]
+SQL: SHOW COLUMNS FROM `cate` [ RunTime:0.028681s ]
+SQL: SELECT * FROM `cate`  [ RunTime:0.000608s ]
+SQL: SELECT * FROM `cate` WHERE ( `pid` = 0 )  [ RunTime:0.000753s ]
+SQL: SELECT `name` FROM `cate` WHERE ( `id` = 1 )  [ RunTime:0.000371s ]
+SQL: SHOW COLUMNS FROM `blog` [ RunTime:0.034541s ]
+SQL: SELECT `title`,`time`,`click` FROM `blog` WHERE ( `cid` IN ('1') )  [ RunTime:0.000465s ]
+SQL: SELECT `name` FROM `cate` WHERE ( `id` = 2 )  [ RunTime:0.000331s ]
+SQL: SELECT `title`,`time`,`click` FROM `blog` WHERE ( `cid` IN ('9','10','2') )  [ RunTime:0.000402s ]
+SQL: SELECT `name` FROM `cate` WHERE ( `id` = 3 )  [ RunTime:0.000244s ]
+SQL: SELECT `title`,`time`,`click` FROM `blog` WHERE ( `cid` IN ('3') )  [ RunTime:0.001535s ]
+SQL: SELECT `name` FROM `cate` WHERE ( `id` = 4 )  [ RunTime:0.000362s ]
+SQL: SELECT `title`,`time`,`click` FROM `blog` WHERE ( `cid` IN ('11','12','13','14','4') )  [ RunTime:0.000423s ]
+SQL: SELECT `name` FROM `cate` WHERE ( `id` = 5 )  [ RunTime:0.000310s ]
+SQL: SELECT `title`,`time`,`click` FROM `blog` WHERE ( `cid` IN ('19','20','5') )  [ RunTime:0.000988s ]
+SQL: SELECT `name` FROM `cate` WHERE ( `id` = 6 )  [ RunTime:0.000864s ]
+SQL: SELECT `title`,`time`,`click` FROM `blog` WHERE ( `cid` IN ('15','16','17','6') )  [ RunTime:0.000744s ]
+SQL: SELECT `name` FROM `cate` WHERE ( `id` = 7 )  [ RunTime:0.000380s ]
+SQL: SELECT `title`,`time`,`click` FROM `blog` WHERE ( `cid` IN ('7') )  [ RunTime:0.000399s ]
+SQL: SELECT `name` FROM `cate` WHERE ( `id` = 8 )  [ RunTime:0.000343s ]
+SQL: SELECT `title`,`time`,`click` FROM `blog` WHERE ( `cid` IN ('8') )  [ RunTime:0.000399s ]
+INFO: [ view_parse ] --START--
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\wamp\www\blog\blog\Modules\index\TagLib\TagLibNav.class.php on line 10 and defined D:\wamp\www\blog\ThinkPHP\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\wamp\www\blog\ThinkPHP\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\wamp\www\blog\ThinkPHP\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\wamp\www\blog\ThinkPHP\Lib\Template\TagLib.class.php 第 92 行.
+NOTIC: [8] Undefined index: sort D:\wamp\www\blog\blog\Modules\index\TagLib\TagLibNav.class.php 第 13 行.
+NOTIC: [2] Missing argument 2 for TagLib::parseXmlAttr(), called in D:\wamp\www\blog\blog\Modules\index\TagLib\TagLibNav.class.php on line 25 and defined D:\wamp\www\blog\ThinkPHP\Lib\Template\TagLib.class.php 第 80 行.
+NOTIC: [8] Undefined variable: tag D:\wamp\www\blog\ThinkPHP\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined index:  D:\wamp\www\blog\ThinkPHP\Lib\Template\TagLib.class.php 第 91 行.
+NOTIC: [8] Undefined variable: tag D:\wamp\www\blog\ThinkPHP\Lib\Template\TagLib.class.php 第 92 行.
+SQL: SELECT * FROM `cate`  [ RunTime:0.000814s ]
+SQL: SELECT `id`,`title`,`click` FROM `blog` ORDER BY click DESC LIMIT 5   [ RunTime:0.000427s ]
+SQL: SELECT `id`,`title`,`click` FROM `blog` ORDER BY click DESC LIMIT 5   [ RunTime:0.000415s ]
+INFO: ParseTemplate Behavior ::run [ RunTime:0.187056s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.187182s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.011779s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.007673s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000899s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000920s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.021636s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.001028s ]
+INFO: [ view_end ] --END-- [ RunTime:0.001150s ]
+
+[ 2017-09-22T18:59:18+08:00 ] 0.0.0.0 /blog/admin
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006065s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006223s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001151s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001327s ]
+
+[ 2017-09-22T18:59:19+08:00 ] 127.0.0.1 /blog/index.php/admin/Login/index.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000709s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000803s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000509s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000586s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.036686s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.036804s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000443s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000426s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000334s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000498s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001914s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000566s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000640s ]
+
+[ 2017-09-22T18:59:34+08:00 ] 127.0.0.1 /blog/index.php/admin/Login/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000572s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000668s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000441s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000518s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.055576s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'sdfffffffffffffffffffffffffffffffffffsdfasdfsdfsdfsdfsdfaerwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwqqweqweqweretttttttttttttttttttttttttttttttttdfadfsdfsdfsdf' ) LIMIT 1   [ RunTime:0.000993s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.046024s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.046594s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.001483s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.001590s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.001263s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.001849s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.007073s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.002041s ]
+INFO: [ view_end ] --END-- [ RunTime:0.002328s ]
+
+[ 2017-09-22T18:59:39+08:00 ] 127.0.0.1 /blog/index.php/admin/Login/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001119s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001294s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000920s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001074s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005580s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'sdfffffffffffffffffffffffffffffffffffsdfasdfsdfsdfsdfsdfaerwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwqqweqweqweretttttttttttttttttttttttttttttttttdfadfsdfsdfsdf' ) LIMIT 1   [ RunTime:0.000363s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005323s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005429s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000348s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000369s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000265s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000456s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001647s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000725s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000826s ]
+
+[ 2017-09-22T18:59:50+08:00 ] 127.0.0.1 /blog/index.php/admin/Login/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001490s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001714s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000911s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001080s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003440s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'sdffffffffffffffffffffffffsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfweqweqweqweqweqweqwfffffffffffsdfasdfsdfsdfsdfsdfaerwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwqqweqweqweretttttttttttttttttttttttttttttttttdfadfsdfsdfsdf' ) LIMIT 1   [ RunTime:0.000356s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006296s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006414s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000458s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000501s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000379s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000677s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002253s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000637s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000710s ]
+
+[ 2017-09-22T18:59:53+08:00 ] 127.0.0.1 /blog/index.php/admin/Login/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000890s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001036s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001098s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001323s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003954s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'sdffffffffffffffffffffffffsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfweqweqweqweqweqweqwfffffffffffsdfasdfsdfsdfsdfsdfaerwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwqqweqweqweretttttttttttttttttttttttttttttttttdfadfsdfsdfsdf' ) LIMIT 1   [ RunTime:0.000293s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006710s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006866s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000529s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000733s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000475s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000661s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002720s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000616s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000719s ]
+
+[ 2017-09-22T18:59:55+08:00 ] 127.0.0.1 /blog/index.php/admin/Login/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001081s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001247s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000855s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000998s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005484s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'sdffffffffffffffffffffffffsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfweqweqweqweqweqweqwfffffffffffsdfasdfsdfsdfsdfsdfaerwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwqqweqweqweretttttttttttttttttttttttttttttttttdfadfsdfsdfsdf' ) LIMIT 1   [ RunTime:0.000570s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006219s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006351s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000388s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000407s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000309s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000509s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001845s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000537s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000636s ]
+
+[ 2017-09-22T19:00:10+08:00 ] 127.0.0.1 /blog/index.php/admin/Login/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001356s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001576s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001083s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001298s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004968s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'sdfffffffffffffsdfsdfsdfsdfsdfdsfsdfwrwerwerweewrwerqweqwe243434234234234fsdfdsxcxvxcvdfsdfsdfsdsdffffffffffffsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfweqweqweqweqweqweqwfffffffffffsdfasdfsdfsdfsdfsdfaerwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwqqweqweqweretttttttttttttttttttttttttttttttttdfadfsdfsdfsdf' ) LIMIT 1   [ RunTime:0.000331s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005628s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005731s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000377s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000415s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000295s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000440s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001726s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000507s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000595s ]
+
+[ 2017-09-22T19:00:13+08:00 ] 127.0.0.1 /blog/index.php/admin/Login/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001370s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001572s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.001107s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001278s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004277s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = 'sdfffffffffffffsdfsdfsdfsdfsdfdsfsdfwrwerwerweewrwerqweqwe243434234234234fsdfdsxcxvxcvdfsdfsdfsdsdffffffffffffsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfsdfweqweqweqweqweqweqwfffffffffffsdfasdfsdfsdfsdfsdfaerwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwwqqweqweqweretttttttttttttttttttttttttttttttttdfadfsdfsdfsdf' ) LIMIT 1   [ RunTime:0.000766s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.008125s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.008274s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000560s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000635s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000489s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000734s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002754s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000777s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000881s ]
+
+[ 2017-09-22T19:00:19+08:00 ] 127.0.0.1 /blog/index.php/admin/Login/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000926s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001064s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000674s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000784s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.004936s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = '' ) LIMIT 1   [ RunTime:0.000351s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.005901s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006026s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000393s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000428s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000316s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000521s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.001886s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000558s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000648s ]
+
+[ 2017-09-22T19:01:17+08:00 ] 127.0.0.1 /blog/index.php/admin/Login/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001069s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001216s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000986s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001142s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.005215s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = '' ) LIMIT 1   [ RunTime:0.000323s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006572s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006677s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000539s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000526s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000422s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000589s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002281s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000649s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000733s ]
+
+[ 2017-09-22T19:01:23+08:00 ] 127.0.0.1 /blog/index.php/admin/Login/login.html
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.002178s ]
+INFO: [ route_check ] --END-- [ RunTime:0.002578s ]
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.002239s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002474s ]
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.003206s ]
+SQL: SELECT * FROM `user` WHERE ( `username` = '' ) LIMIT 1   [ RunTime:0.000350s ]
+INFO: [ view_parse ] --START--
+INFO: ParseTemplate Behavior ::run [ RunTime:0.006130s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.006263s ]
+INFO: [ view_filter ] --START--
+INFO: ContentReplace Behavior ::run [ RunTime:0.000450s ]
+INFO: TokenBuild Behavior ::run [ RunTime:0.000466s ]
+INFO: WriteHtmlCache Behavior ::run [ RunTime:0.000360s ]
+INFO: ShowRuntime Behavior ::run [ RunTime:0.000523s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.002004s ]
+INFO: [ view_end ] --START--
+INFO: ShowPageTrace Behavior ::run [ RunTime:0.000571s ]
+INFO: [ view_end ] --END-- [ RunTime:0.000645s ]
+

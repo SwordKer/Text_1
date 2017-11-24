@@ -1,0 +1,26 @@
+<include file="common:header"/>
+<body>
+<!--头部-->
+<include file="common:nav"/>
+
+<!--主体-->
+	<div class='main'>
+		<div class='main-left'>
+			<foreach name="result" item='v'>
+				<dl style="margin:1px">
+					<dt>{$v.name}</dt>
+					<dd class='channel'>{$v.title}</dd>
+					<dd class='info'>
+						<span class='time'>发布于：{$v.time|date="y年m月d日 h:i",###}</span>
+						<span class='click'>点击：{$v.click}</span>
+					</dd>
+					<dd class='content'>{$v.title}</dd>
+					<dd class='read'>
+						<a href="">阅读全文>></a>
+					</dd>
+				</dl>
+			</foreach>
+			{$page}
+		</div>
+	<!--主体右侧-->
+<include file="common:footer"/>

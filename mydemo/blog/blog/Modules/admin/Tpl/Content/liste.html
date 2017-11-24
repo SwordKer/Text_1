@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<style>
+	td {
+		border-top:1px solid #ccc;
+		text-align:center;
+		padding:5px;
+	}
+</style>
+</head>
+<body>
+	<table style="width:60%;margin:10px auto;">
+		<tr>
+			<th>id</th>
+			<th style="text-align:left;">标题</th>
+			<th>点击</th>
+			<th>日期</th>
+			<th>操作</th>
+		</tr>
+		<foreach name="result" item="v">
+			<tr>
+				<td>{$v.id}</td>
+				<td style="text-align:left">
+					{$v.title}
+					<foreach name="v.attr" item="k">
+						<span style="color:{$k['color']}">[{$k['name']}]&nbsp;</span>
+					</foreach>
+				</td>
+				<td>{$v.click}</td>
+				<td>{$v.time|date='y/m/d h:i',###}</td>
+				<td><a href="{:U('Content/delete',array('id'=>$v['id']))}" style="color:#999;text-decoration:none;border:1px solid #ccc;padding:3px">删除</a></td>
+			</tr>
+		</foreach>
+	</table>
+</body>
+</html>

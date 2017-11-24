@@ -1,0 +1,20 @@
+<include file="common:header"/>
+<body>
+<include file="common:nav"/>
+<!--主体-->
+	<div class='main'>
+		<div class='main-left'>
+			<p>后盾博文</p>
+			<foreach name="blog" item="v">
+				<dl style="margin:1px">	
+					<dt>{$v.name}aa<a href="">更多>></a></dt>
+					<foreach name="v.text" item="k">
+						<dd>
+							<a href="">{$k.title}</a>
+							<span>{$k.time|date="y-m-d",###}</span>
+						</dd>
+					</foreach>
+				</dl>
+			</foreach>
+		</div>
+<include file="common:footer"/>

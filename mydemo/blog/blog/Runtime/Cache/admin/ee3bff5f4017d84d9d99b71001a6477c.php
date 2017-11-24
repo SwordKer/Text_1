@@ -1,0 +1,26 @@
+<?php if (!defined('THINK_PATH')) exit();?><!DOCTYPE html>
+<html>
+<link rel="stylesheet" href="http://localhost/wish/wish/Tpl/admin/public/Css/public.css" />
+<link rel="stylesheet" href="http://localhost/wish/wish/Tpl/admin/public/Css/index.css" />
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+<body>
+<form action="<?php echo U('Attribute/attrHandle');?>" method="post">
+	<table class="table">
+		<tr>
+			<th>add Attribute</th>
+		</tr>
+		<tr>
+			<td>name</td>
+			<td><input type="text" name="name" placeholder="enter name" autocomplement="off"></td>
+		</tr>
+		<tr>
+			<td>color</td>
+			<td><input type="text" name="color" placeholder="enter color" autocomplement="off"></td>
+		</tr>
+		<tr>
+			<td><input type="submit" value="保存添加" ></td>
+		</tr>
+	</table>
+</form>
+</body>
+</html>
